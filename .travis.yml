@@ -1,7 +1,6 @@
 language: php
 php:
   - 7.1
-
 services:
   - postgresql
 before_script:
@@ -14,12 +13,10 @@ before_script:
 
 script:
   - vendor/bin/phpunit
-
 deploy:
-  - provider: heroku
-    api_key:
-      secure: MgIV5VpUGUmVWsC4IllbRzbOQoG3AZKml07SIg0U2/e8zQcp87/duG7L2IRJPVnVOuvbZQOJCHOMLU/HSX9EqjiKYO+DxvpwI3NPv4QrFh2BMl/GBbDEwnfwNrBwWvXFnXPzss/iEa1jJrjL+99uJALn12YcPHtsuQQCoW9Mq9xx9lzGtYdzNiuOD79pNexP19elZtBB7ggfTZARjMELSkgKmTdX2DN+yldyCdltMqVHwYCHSeKGnITiZ7k5ya3PoMCUvLkTzMmsgplANLtElT4/iCDkcMNCh3vVIar9VYfgssVrzo5VIOKQtEHhFPj9gOmDQhgq6hCN4xL3KLzNqs0yImkw3ux9KqXsQpM+Y3Zm7OyrPKwbFXZSVHICGW/oUwb2iBV+7K4aZnerdd5hagMIHbjy3XdNkvcPS2XMtC0FKUjckDJxUM6gtnHG3HZHPgvmF/IXxZF3HvwgJUALE4OdwMImVZLzDwaEuvBTtTWJij4fj+czcB0kBxeu31DCwZKzD2l5NIsBdIUZNwF1hE0hFCJWYSEcts7NpQm0HKVMIUJIwAoUgjGFaJq/LIgKGIclSjjbZc6oXCoEkaQptAlDVyjotZRU0WLrJr0+ouUC1FmPwfMPsZM3lAs2XfRKKSa5hrUZLlhC0XhnIEmJnNKkqiuisbXvOfHB+L40C+4=
-    app: hidden-depths-47488
-    on:
-      all_branches: true
-
+  provider: heroku
+  api_key:
+    secure: IDj1QX3D6t8B6wOty2KvJoXkT6JlNwfrdDGWFTBaLt3AsoKQW+atLiv4ZIQYvSqOLpvQsE0G7lTlGXrYbZruw4ACyux9fPNZcEA9gb5cJk4THoqnt3sgnKNTCCv2obTuE4dGfrb9ZHFUaozP3JvYdQFL3jr5kuxREigJtJDzzoC1Kj4svKgANXsfdAuHX0g6UZE2MRCodBoZbjsf7aktGo2+o+2juJDixuvXxCJfgGEkHGVJBHh/vPPacKXhTlP8gGaZTrNahMwlISLJzB2EiaPEDgOmkm8/ohiUdkA5x2B8c5dK0CLFRpvqFq2JsxaCU6/KPiHN4SKyfY+levGxxsOXUtqk9vbDd4WLJxITyiW4GoLCHWgeUXJA4eDoOnP2h+yJuHE1f3MSptC5IgA01Z6YpASG4Z9ijhIz+4zMjkG6BbedNtQURh8N/eDVLt+TR1recQ7ZCWLtJ8jiTY3lBIwYrkPhehrbzKo06AWBNFeibf9VHM9FE6y3eFJ+1ElVeNX6DqseDXCsJgTadSCjiQvTgpawqSp7u9ssVDVwTwtNXf14aFI5MUGsrNB/aMyU6mJD3XNXRm7QihyK8CuUXw191BuQdVBVz0NYw+UfVakxqB0ejtomytLhDCtp0SznXijrZykAS2UCL18/N9g70KmIY5aQu0BOxwu5rIh8ZyM=
+  app: hidden-depths-47488
+  on:
+    all_branches: true
